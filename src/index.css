@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  text-align: center;
+}
+.main {
+  margin: 4%;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+form {
+  width: 90%;
+  margin: 0px auto;
+}
+h4 {
+  font-size: larger;
+  width: 100%;
+  background: url(./pattern.png);
+  color: ghostwhite;
+  letter-spacing: 0.07em;
+  padding: 3%;
+  border-radius: 5px 5px 0px 0px;
+}
+.cont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  align-items: center;
+}
+.conts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkLabel {
+  font-size: medium;
+}
+input,
+select,
+option {
+  width: 100% !important;
+  height: 50px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 10px 0px;
+  padding: 0px 10px 0px 10px;
+}
+input[type='checkbox'] {
+  width: 12px !important;
+}
+small {
+  display: none;
+  font-size: small;
+  margin: 0%;
+  padding: 0%;
+  color: red;
+  text-align: start;
+}
+.error {
+  display: block;
+  word-wrap: break-word !important;
+  font-size: small;
+  margin: 0%;
+  padding: 0%;
+  color: red;
+  text-align: start;
+}
+button {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1% 15%;
+  margin: 10px 0px;
+}
+@media (max-width: 580px) {
+  .main {
+    margin: 2%;
+  }
+  .cont {
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  h4 {
+    font-size: large;
+    padding: 5%;
+  }
+  .error {
+    width: 100% !important;
+  }
+  .checkLabel {
+    font-size: 12px;
+  }
+}
+@media (max-width: 420px) {
+  .cont {
+    gap: 6px;
+  }
+  h4 {
+    font-size: medium;
+    padding: 10%;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .error {
+    font-size: 9px;
+  }
+  input,
+  select,
+  option {
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    margin: 8px 0px;
+    padding: 0px 8px 0px 8px;
+  }
+  h4 {
+    font-size: medium;
+    padding: 4%;
+    border-radius: 0px;
+  }
+  .checkLabel {
+    font-size: 12px;
+  }
+}
